@@ -39,10 +39,11 @@ header {
   font-size: 30px;
   text-align: center;
   font-family: monospace;
+  margin-bottom: 150px;
 }
 
 p {
-  margin-top: 150px;
+  margin-top: 50px;
   text-align: center;
   font-size: 20px;
   font-family: monospace;
