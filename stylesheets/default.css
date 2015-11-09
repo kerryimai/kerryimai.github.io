@@ -1,0 +1,57 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+H1 {
+  margin-top: 20px;
+  font-size: 60px;
+  font-family: monospace;
+  text-align: center;
+}
+
+nav {
+  background-color: rgba(158, 158, 158, 0.32);
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  padding-left: 10px;
+}
+
+nav>ul {
+  margin-top: 100px;
+}
+
+nav ul li a {
+  font-style: bold;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+nav ul li a:visited {
+  color: black;
+}
+
+nav ul li ul {
+  margin-left: 22px;
+  list-style: none;
+}
+
+img {
+  left: 30%;
+  display: inline-block;
+  height: 300px;
+  width: 500px;
+  position: relative;
+}
+
+p {
+  position: relative;
+  left: 25%;
+  font-size: 20px;
+  font-family: monospace;
+}
