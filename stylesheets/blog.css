@@ -40,6 +40,7 @@ header {
   text-align: center;
   font-family: monospace;
   margin-bottom: 150px;
+  margin-left: 200px;
 }
 
 p {
@@ -89,4 +90,11 @@ button {
 
 button:hover {
   font-weight: bold;
+}
+
+figcaption {
+ text-align: center;
+ font-size: 15px;
+ font-weight: bold;
+ font-family: monospace;
 }
