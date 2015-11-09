@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+    <title>Kerry's Blog</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Kerry's Blog</h1>
+    </header>
+<nav>
+    <h2><a href="../index.html">Home</a></h2>
+    <h2><a href="#">Facebook</a></h2>
+    <h2><a href="#">Contact Info</a></h2>
+    <h2><a href="#">Album</a></h2>
+  </nav>
+
+  <div id="sidebar">
+    <ul>
+      <li><a href="git.html">blog 1</a></li>
+      <li><a href="#">blog 2</a></li>
+      <li><a href="#">blog 3</a></li>
+      <li><a href="#">blog 4</a></li>
+    </ul>
+  </div>
+
+  <p>Static Position<br>
+    Static is the position where it would normally go according to the html flow, its also called the default position. When an element's position is not specified, its considered static. When you have a sequel of static elements in your code, they would stack in the order of whichever come first in your line of codes.
+  </p>
+    <img src="https://yoga4ayear.files.wordpress.com/2012/02/funny-dog-picture-doggie-pee-line.jpg?w=529"/>
+
+  <p>
+    Relative Position<br>
+   An element with a relative postion setting will move according to it's original static position. Styling relative position to an element would not initially change it's position just yet, its til when you tells it where to go (top, bottom left right etc), the element would start moving arround in relation to where it was.
+   Example: In this picture, the blue element was at first in its' place in held position. When you change its position to relative and move it 100 px from top (top: 100px;), 100 px from the left( left: 100px;), it would move move 100 lower and to the right of its original spot as you can see in the picture.
+  </p>
+   <img src="http://webdevbydoing.com/wp-content/themes/WebDevByDoing/images/relative-position.jpg"/>
+   <p>
+   Absolute Position<br>
+   Absolute Position might be a little more complicated than the rest to understand. It positions the specified element according to it's closest relatively positioned parent element. If it does not have a non static parent or it had no parent element at all, then it would be positioned according to the html body.
+   First, when you set an element's position to absolute, its original place holder would disapper, so the surrounding elements would move up to close that gap.
+   Also,an absolutely positioned element is removed from the normal flow. So when you can put it anywhere on the page, it does not affect or be affected by any other element in the flow.
+    </p>
+    <img src="http://www.dennisplucinik.com/blog/wp-content/uploads/2012/03/position-absolute.jpg"/>
+    <p>
+      In this picture,it shows what would happen if you set the 2nd box position to absolute, and move it 20 px top and left. The 3rd box would move left to fill up it's space, since it is taken out from the Dom flow. The absolute element then positions itself in relation to its closest relative positioned parent, and is 20 px from the top. and left edge of that parent element.
+    </p>
+    <p>
+   Fixed Position<br>
+   Fixed position element is completely independent from others on the web page. It positions according to the browser window. Even when a page is being scrolled, a fixed element would still be at the exact spot on the page.
+   For example, try to scroll up and down on my website, you see how the side bar menu stays at the same place no matter what? Yes, beacause it is a fixed positioned element.
+  </p>
+
+  <div class="pager">
+  <button type="button" onclick="alert('Hello world!')">back</button>
+  <button type="button" onclick="alert('Hello world!')">next</button>
+</div>
+
+
+
+  </body>
+</html>
