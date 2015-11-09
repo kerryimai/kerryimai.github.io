@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-H1 {
+h1 {
   margin-top: 20px;
   font-size: 60px;
   font-family: monospace;
@@ -20,7 +20,7 @@ nav {
   padding-left: 10px;
 }
 
-nav>ul {
+nav > ul {
   margin-top: 100px;
 }
 
@@ -36,9 +36,21 @@ nav ul li a:visited {
   color: black;
 }
 
+nav ul li a:hover {
+  color: white;
+}
+
 nav ul li ul {
   margin-left: 22px;
   list-style: none;
+}
+
+nav li ul {
+  display: none;
+}
+
+nav li:hover ul {
+  display: block;
 }
 
 img {
