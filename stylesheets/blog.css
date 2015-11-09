@@ -3,6 +3,89 @@
   padding: 0;
 }
 
-div {
+#sidebar {
+  width: 160px;
+  top: 0;
+  bottom: 0;
+  background-color: gray;
+  display: block;
+  position: fixed;
+}
 
+div ul {
+  margin-top: 100px;
+  border: 2px solid white;
+  padding: 10px;
+  list-style: none;
+}
+
+
+
+div li a {
+  padding-bottom: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: monospace;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+div li a:hover {
+  color: black;
+}
+
+header {
+  font-size: 30px;
+  text-align: center;
+  font-family: monospace;
+}
+
+p {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 20px;
+  font-family: monospace;
+  background-color: gray;
+  display: block;
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+
+nav {
+  float: right;
+  position: relative;
+  background-color: gray;
+  width: 150px;
+  height: 550px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  margin-bottom: 20px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav h2 {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.pager {
+  position: relative;
+  left: 45%;
+  bottom: -300px;
+}
+
+button {
+  font-size: 20px;
+}
+
+button:hover {
+  font-weight: bold;
 }
