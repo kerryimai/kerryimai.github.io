@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+    <title>Kerry's Blog</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Kerry's Blog</h1>
+      <h3>Arrays and Hashes</h3>
+
+    </header>
+<nav>
+    <h2><a href="../index.html">Home</a></h2>
+    <h2><a href="#">Facebook</a></h2>
+    <h2><a href="#">Contact Info</a></h2>
+    <h2><a href="#">Album</a></h2>
+  </nav>
+
+  <div id="sidebar">
+    <ul>
+      <li><a href="index.html">Blog list</a></li>
+      <li><a href="git.html">blog 1</a></li>
+      <li><a href="css-concepts.html">blog 2</a></li>
+      <li><a href="#">blog 3</a></li>
+      <li><a href="#">blog 4</a></li>
+    </ul>
+  </div>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/George-peabody-library.jpg"/>
+
+  <p>
+    <spam class="keywords">Arrays</spam> and <spam class="keywords">hashes</spam> are both great ways to collect and store data, however they are also two very different systems.Lets look at them as how we usually memorise things in the real world. For example, when you are making a bucket list for countries that you want to go to, there are a few different ways to do so. You can write out the country names and put them in an alphabetically ordered list, which is very similar to what <spam class="keywords">array</spam> would do. An <spam class="keywords">array</spam> can collect your data in a specific order, and you can always retrive the data by calling its postion in the order list. One thing to pay attention to here is that the first item in the list is counted as position 0, not 1.
+  </p>
+  <img src="http://www.leeabbamonte.com/wp-content/uploads/2014/02/list.jpg"/>
+  <section>
+
+  <p>
+    Example:<br>
+    Name of countries: Australia, China, Japan, USA, England, France, Spain <br>
+    Array:
+    countries = ['Australia', 'China', 'England', 'France', 'Japan', 'Spain', 'USA'] <br>
+
+    When you want to pull up the thrid country on the list you would write: <br>
+
+    countries[2]<br>
+
+    Spain would be : countires[6]
+  </p>
+</section>
+  <p>
+    A list is great, however sometimes you might need a little more help to remember all the countires that are on your bucket list. So you would make yourself a pack of flashcards with a keyword related to the specific countries and the country names on the other side. And that, is very close to how <spam class="keywords">hashes</spam> work.<br>
+    A <spam class="keywords">hash</spam> collects data in pairs, and each pair is made of a key and a value. The key must be unique and points specifically to its value in the hash. Thus whenever you want to pull out the value in a <spam class="keywords">hash</spam>, you just have to call its key word instead of having to memorise its position in a list. Sometimes, it is difficul to put a list of items in a particular order and memorise that order.
+  </p>
+  <section>
+    <img src="http://bipolarhappens.com/bhblog/wp-content/uploads/travel-industry.jpg"/>
+  <p>
+    Example:<br>
+    countries = {'cheese => France', 'sushi => Japan', 'koala => Australia', 'hamburger => USA', 'panda => China', 'tapas => Spain', 'fishandchips => England'} <br>
+
+    When look up: <br>
+    countries{'hamburger'} is going to return USA as the value
+    countries{'sushi'} will give you Japan
+  </p>
+</section>
+  <p>
+    Just like your flash cards, from the keyword you are going to remember the relative countries on the back of the cards, just in case you forget where you are planning to go next.<br>
+    I hope this page helps you clear out some confusions between <spam class="keywords">array</spam> and <spam class="keywords">hashes</spam>, and that you enjoyed reading it!
+  </p>
+
+  <div class="pager">
+  <button type="button" onclick="alert('Hello world!')">back</button>
+  <button type="button" onclick="alert('Hello world!')">next</button>
+</div>
+
+
+
+  </body>
+</html>
+
+<!--
+  How was it to wireframe and create an HTML page with a pair?
+  It was interesting seeing how different we wireframe our pages, and I got to learn about the software that my partner uses to do his framing.
+  Did you find wireframing to be helpful to your development process?
+  Yes, it makes me think deeper and a step further on what and how I want to design my page, and why.
+  What did you and your pair decide made a good wireframe?
+  simple, clear design is what we think would work for now.
+  What new semantic elements did you learn about (if any)?
+  I learned about Div from Joseph, it seems to show that its a division.
+-->
+
+<a href=https://github.com/kerryimai/kerryimai.github.io/blob/master/imgs/wireframe-blogs.png></a>

@@ -40,7 +40,7 @@ header {
   text-align: center;
   font-family: monospace;
   margin-bottom: 150px;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 
 p {
@@ -97,4 +97,20 @@ figcaption {
  font-size: 15px;
  font-weight: bold;
  font-family: monospace;
+}
+
+section > p {
+  background-color: rgba(32, 118, 171, 0.24);
+  text-align: left;
+}
+
+.keywords {
+  color: white;
+  font-weight: bold;
+}
+
+img {
+
+  margin-top: 20px;
+  display: inline-block;
 }
