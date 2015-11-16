@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
     <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
     <title>Kerry's Blog</title>
@@ -15,12 +16,6 @@
   <h3>Introducing the basic to beginners</h3>
   <h4>10/25/2015</h4>
     </header>
-<nav>
-    <h2><a href="../index.html">Home</a></h2>
-    <h2><a href="#">Facebook</a></h2>
-    <h2><a href="#">Contact Info</a></h2>
-    <h2><a href="#">Album</a></h2>
-  </nav>
 
   <div id="sidebar">
     <ul>
@@ -29,6 +24,11 @@
       <li><a href="css-concepts.html">blog 2</a></li>
       <li><a href="arrays-hashes.html">blog 3</a></li>
       <li><a href="#">blog 4</a></li>
+    </ul>
+    <ul id="home">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Album</a></li>
     </ul>
   </div>
 
@@ -45,8 +45,8 @@
     </p>
 
   <div class="pager">
-  <button type="button" onclick="alert('Hello world!')">back</button>
-  <button type="button" onclick="alert('Hello world!')">next</button>
+  <a href="index.html"> Previous Page </a>
+<a href="css-concepts.html"> Next Page </a>
 </div>
 
 
