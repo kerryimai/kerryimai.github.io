@@ -106,3 +106,16 @@ img {
   margin-top: 20px;
   display: inline-block;
 }
+
+.icons{
+  position: fixed;
+  top: 10px;
+  right: 50px;
+}
+
+
+.icons img {
+  width: 40px;
+  height: 40px;
+  z-index: 3;
+}
