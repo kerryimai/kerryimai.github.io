@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+    <title>Kerry's Blog</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Kerry's Blog</h1>
+      <h3>Enumerable: magic of map</h3>
+    </header>
+
+  <div id="sidebar">
+    <ul>
+      <li><a href="index.html">Blog list</a></li>
+      <li><a href="git.html">blog 1</a></li>
+      <li><a href="css-concepts.html">blog 2</a></li>
+      <li><a href="arrays-hashes.html">blog 3</a></li>
+      <li><a href="#">blog 4</a></li>
+    </ul>
+    <ul id="home">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Album</a></li>
+    </ul>
+  </div>
+
+  <p>
+    Enumerable is a powerful module that gives you ways of working with arrays and hashes.It lets you do something to each or all of the items in an object. A lot of times in programing, you would have an object with large amount of data, and you would need enumerable to deal with them in order to not waste time repeating the same process again and again.
+  </p>
+
+  <p>
+    As you may have known, <spam class="keywords">#map</spam> is one of the enumerables. And today's blog is going to help you understand this method better and throughly. <spam class="keywords">#map</spam> functions the same as collect, and it is used more often than between the two. What does <spam class="keywords">#map</spam> do that is so great? <spam class="keywords">#map</spam> lets you operate a transformation to all items in a collection without altering the collection's original data. It returns you a copy of the altered version of the data.
+  </p>
+
+    <img src="https://s3-eu-west-1.amazonaws.com/rbi-communities/wp-content/uploads/sites/8/2014/01/tupe_men.jpg">
+
+  <p>
+    Does that remind you of the method #each? Yes, all enumerable methods including <spam class="keywords">#map</spam> are based off the method #each. Thus, what <spam class="keywords">#map</spam> is doing is to accpet an invoke order and uses it on each of the items in a collection. However, unlike #each, <spam class="keywords">#map</spam> returns you the altered collection and not just a single item in the collection.
+  </p>
+
+<section>
+    <img src="http://www.mightyheaton.com/wp-content/uploads/2012/08/01-Vending-915x1024.jpg"/>
+  <p>
+    <strong>Example:</strong><br>
+    Your health concious sibling left a list of grocery items on the desk for your mother to buy later: <br>
+    <strong>fruits = ['apple', 'banana', 'blueberry', 'peach']</strong><br>
+    You dont want any of these items on the list but you are really craving for PIES!! So you makes your version of her list and secretly swtiches the two: <br>
+    <strong>fruitpies = fruits.map {|fruit| fruit + "pie"}<br>
+    print fruitpies  #=> ["applecake", "bananacake", "blueberrycake", "peachcake"]</strong><br>
+    Now that looks much better! You are welcome =)
+  </p>
+  <img src="http://i.dailymail.co.uk/i/pix/2014/11/20/2353678100000578-0-image-15_1416480484304.jpg">
+</section>
+
+<div class="pager">
+  <a href="index.html"> Previous Page </a>
+<a href="css-concepts.html"> Next Page </a>
+</div>
+
+<div class="icons">
+<a href="https://www.facebook.com/kerry.imai"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Facebook.png"/></a>
+<a href="https://github.com/kerryimai"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Github.png"/></a>
+<a href="mailto:kmc736@nyu.edu"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-GooglePlus.png"/></a>
+</div>
+
+
+  </body>
+</html>
+
