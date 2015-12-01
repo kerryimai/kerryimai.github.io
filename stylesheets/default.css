@@ -60,13 +60,17 @@ img {
   height: 300px;
   width: 500px;
   position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 p {
   position: relative;
-  left: 25%;
+  left: 20%;
+  width: 60%;
   font-size: 20px;
   font-family: monospace;
+  margin-top: 20px;
 }
 
 .icons{
@@ -81,3 +85,4 @@ p {
   height: 40px;
   z-index: 3;
 }
+
