@@ -86,3 +86,7 @@ p {
   z-index: 3;
 }
 
+#auto {
+ width: 500px;
+ height: auto;
+}
