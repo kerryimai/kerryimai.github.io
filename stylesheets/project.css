@@ -42,15 +42,14 @@ nav ul li a {
   text-decoration: none;
   display: block;
   font-size: 30px;
-  font-family: fantasy;
 }
 
 nav ul li a:visited {
-  color: black;
+  color: white;
 }
 
 nav ul li a:hover {
-  color: white;
+  color: black;
 }
 
 nav ul li ul {
