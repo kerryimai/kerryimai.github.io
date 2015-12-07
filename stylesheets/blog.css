@@ -108,6 +108,10 @@ pre {
   left: 20%;
 }
 
+section {
+  width: 60%;
+}
+
 .keywords {
   color: rgba(208, 14, 73, 0.72);
   font-weight: bold;

@@ -22,7 +22,7 @@
       <li><a href="arrays-hashes.html">blog 3</a></li>
       <li><a href="enumerable-methods.html">blog 4</a></li>
       <li><a href="ruby-classes.html">blog 5</a></li>
-      <li><a href="javaScript.html">blog 6</a></li>
+      <li><a href="JavaScript.html">blog 6</a></li>
 
     </ul>
     <ul id="home">
@@ -40,21 +40,23 @@
     So far, we have been pretty familiar of writing a variety of useful methods. But they have all been independent from each other. What if you would like to use several of these methods on one item without having to repetiively inputing the same data? This is where <spam class="keywords">class</spam> would come to be useful.</P>
 
   <p>Lets say we have a closet with differnt clothings, first I would make a <spam class="keywords">closet class</spam> that takes the different variables as arugments:</P>
-    <section>
+
       <pre>
+        <section>
       class Closet<br>
         def initialize(color, type, date_bought, times_used)<br>
           #code code code<br>
         end
       end
+      </section>
       </pre>
-  </section>
   <p>Voila, now you have a <spam class="keywords">class</spam> named Closet and everytime when you want to put a new item into it, you can also pass the important details such as the item's color, type(skirt,Jacket,etc..), date you bought it, and the material it is made of.</p>
   <img src="http://st.hzcdn.com/simgs/4ce1a32e013e6bc1_4-5318/traditional.jpg">
   <p>
   In <spam class="keywords">Class</spam>, it is very common to share and reuse variables in its different methods. So lets go ahead and set our variables into <spam class="keywords">instance variables</spam> using the <spam class="keywords">@</spam> notation in front of the variable name:</p>
-  <section>
+
     <pre>
+      <section>
   class Closet
     def initialize(color, type, date_bought, times_used)
         @color = color
@@ -64,12 +66,12 @@
       end
     end
    ~>jeans1 = Closet.new("blue", "longdenim", "10/5/15", 0)
-    </pre>
-  </section>
+   </section>
+      </pre>
   <img src="http://www.savilerowsociety.com/blog/wp-content/uploads/2015/09/Jeans.jpeg">
-  <section>
-    <pre>
 
+    <pre>
+    <section>
     #Now lets add some more methods into your Closet:
 
     class Closet
@@ -84,13 +86,14 @@
     end
 end
 ~>jeans1.used_it  #@times_used = 1
-    </pre>
-    </section>
+   </section>
+      </pre>
 
 <p>
 Above, I created a method inside the <spam class="keywords">class</spam> where you can keep track of how many times you have used an items in your closet. Whenever you decide to take something out and wear it, just type the command: <spam class="keywords">object</spam>.used_it  like I did above, and ruby will help you keep track of the used record. So far, we have set up a pretty good system, but for now you wont be able to access the data of the items from outside the method. To do that, you would need to use a method called > <spam class="keywords">attr_accessor</spam>, and pass the symbal of the names you would want to access:</p>
-<section>
+
     <pre>
+      <section>
       class Closet
         attr_accessor :color, :type, :date_bought, :times_used
         def initialize(color, type, date_bought, times_used)
@@ -103,14 +106,14 @@ Above, I created a method inside the <spam class="keywords">class</spam> where y
           @times_used += 1
         end
       end
-    #So now when I call and ask data from the outside of the class:
+  #So now when I call and ask data from the outside of the class:
 
     ~>jeans1
   #Closet:0x007f8b309fdfb8 @color="blue",
   @type="longdenim", @date_bought=10/5/15, @times_used=1
 
-</pre>
 </section>
+      </pre>
 
 <img class="original" src="https://s-media-cache-ak0.pinimg.com/236x/95/39/d9/9539d9588b7145c790248c2da8e5187a.jpg">
 

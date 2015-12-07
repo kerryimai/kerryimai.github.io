@@ -26,7 +26,7 @@
       <li><a href="#">blog 3</a></li>
       <li><a href="enumerable-methods.html">blog 4</a></li>
       <li><a href="ruby-classes.html">blog 5</a></li>
-      <li><a href="javaScript.html">blog 6</a></li>
+      <li><a href="JavaScript.html">blog 6</a></li>
     </ul>
     <ul id="home">
       <li><a href="../index.html">Home</a></li>
@@ -40,36 +40,46 @@
     <spam class="keywords">Arrays</spam> and <spam class="keywords">hashes</spam> are both great ways to collect and store data, however they are also two very different systems.Lets look at them as how we usually memorise things in the real world. For example, when you are making a bucket list for countries that you want to go to, there are a few different ways to do so. You can write out the country names and put them in an alphabetically ordered list, which is very similar to what <spam class="keywords">array</spam> would do. An <spam class="keywords">array</spam> can collect your data in a specific order, and you can always retrive the data by calling its postion in the order list. One thing to pay attention to here is that the first item in the list is counted as position 0, not 1.
   </p>
   <img src="http://www.leeabbamonte.com/wp-content/uploads/2014/02/list.jpg"/>
-  <section>
 
-  <p>
+
+  <pre>
+      <section>
     Example:<br>
-    Name of countries: Australia, China, Japan, USA, England, France, Spain <br>
+    Name of countries: Australia, China, Japan,
+     USA, England, France, Spain <br>
     Array:
-    countries = ['Australia', 'China', 'England', 'France', 'Japan', 'Spain', 'USA'] <br>
+    countries = ['Australia', 'China', 'England',
+     'France', 'Japan', 'Spain', 'USA'] <br>
 
-    When you want to pull up the thrid country on the list you would write: <br>
+    When you want to pull up the thrid country on
+    the list you would write: <br>
 
     countries[2]<br>
 
     Spain would be : countires[6]
-  </p>
-</section>
+     </section>
+</pre>
+
   <p>
     A list is great, however sometimes you might need a little more help to remember all the countires that are on your bucket list. So you would make yourself a pack of flashcards with a keyword related to the specific countries and the country names on the other side. And that, is very close to how <spam class="keywords">hashes</spam> work.<br>
     A <spam class="keywords">hash</spam> collects data in pairs, and each pair is made of a key and a value. The key must be unique and points specifically to its value in the hash. Thus whenever you want to pull out the value in a <spam class="keywords">hash</spam>, you just have to call its key word instead of having to memorise its position in a list. Sometimes, it is difficul to put a list of items in a particular order and memorise that order.
-  </p>
-  <section>
+    </p>
+
     <img src="http://bipolarhappens.com/bhblog/wp-content/uploads/travel-industry.jpg"/>
-  <p>
+  <pre>
+      <section>
     Example:<br>
-    countries = {'cheese => France', 'sushi => Japan', 'koala => Australia', 'hamburger => USA', 'panda => China', 'tapas => Spain', 'fishandchips => England'} <br>
+    countries = {'cheese => France', 'sushi => Japan',
+     'koala => Australia', 'hamburger => USA', 'panda => China',
+      'tapas => Spain', 'fishandchips => England'} <br>
 
     When look up: <br>
     countries{'hamburger'} is going to return USA as the value
     countries{'sushi'} will give you Japan
-  </p>
+
 </section>
+</pre>
+
   <p>
     Just like your flash cards, from the keyword you are going to remember the relative countries on the back of the cards, just in case you forget where you are planning to go next.<br>
     I hope this page helps you clear out some confusions between <spam class="keywords">array</spam> and <spam class="keywords">hashes</spam>, and that you enjoyed reading it!
