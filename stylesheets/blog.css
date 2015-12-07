@@ -136,3 +136,13 @@ img {
   width: 330px;
   height: 420px;
 }
+
+#office {
+  opacity: 0.2;
+  transition: opacity 1s;
+}
+
+#office:hover {
+  opacity: 1.0;
+  transition: opacity 1s;
+};
