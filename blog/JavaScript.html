@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+    <title>Kerry's Blog</title>
+  </head>
+
+  <body>
+    <img src="http://data.whicdn.com/images/145906384/large.jpg" id="bg" alt="">
+
+    <header>
+      <h1>Kerry's Blog</h1>
+      <h3>Classy Ruby Class</h3>
+    </header>
+  <div id="sidebar">
+    <ul>
+      <li><a href="index.html">Blog list</a></li>
+      <li><a href="git.html">blog 1</a></li>
+      <li><a href="css-concepts.html">blog 2</a></li>
+      <li><a href="arrays-hashes.html">blog 3</a></li>
+      <li><a href="enumerable-methods.html">blog 4</a></li>
+      <li><a href="ruby-classes.html">blog 5</a></li>
+      <li><a href="#">blog 6</a></li>
+
+    </ul>
+    <ul id="home">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">Album</a></li>
+    </ul>
+  </div>
+    <img src="http://petapixel.com/assets/uploads/2011/09/spacecharlk_mini.jpg">
+    <P>  Hey there! This week I am going to discuss the differences between Ruby Classes and Javascript constructors functions. If you have read some of my other blogs, this would probably remind you the one from last week : Classy Ruby Classes! If you have not, no worries, I will go through a review with you shortly.<br>
+
+    As you might be the many among us who thought Javascript constructors were Classes, this might come as a bit of a shock, but jsut know that these two things are actually quite similar and the differences are easily to extinguishable.
+    A Ruby class itself can be seen as an object. However it is a special kind of object
+     that contains special methods and characteristics. It as
+      two main functions:<br>
+     <pre>
+    ---creating new instances(that falls into this specific class)<br>
+    ---defines the behavior of the instances<br>
+    Here is an example of these two functions in action:</pre>
+
+    </p>
+    <section>
+      <pre>
+
+      class Artists
+
+        def initialize(first_name, last_name, artist_type)
+          @first_name = first_name
+          @last_name = last_name
+          @artist_type = artist_type
+        end
+
+        def introduce
+          "#{@first_name} #{@last_name} is a famous #{@artist_type}"
+        end
+      end
+
+      art1 = Artists.new("Beyonce", "Knowles", "singer")
+      puts art1.introduce
+
+      </pre>
+    </section>
+
+    <p>
+
+      Above, with the initialize code, I am able to create an new instance 'art1' which belongs in the Artists class.
+      Thus when I call the instance method "introduce" on my art1, it automatically plugs in the arguemetns from the initailize call and returns the result.
+
+    </p>
+    <p>
+
+      Now you are probably thinking: Doesn't Javascript constructors do the same thing? IT does appear so but there ar actually sufficient differences between the two. Look at this image below, your initial thought might be thinking that it was an owl, but when you look closer into the details, its actually made with very different things.
+
+      </P>
+
+      <img src="http://2.media.collegehumor.cvcdn.com/38/38/dec7e5ecc77cc3e3c3e08b6f6f94d389.jpg" class="square">
+
+    <p>
+
+       Just like this cup of owl looknig coffee, in Javacript, the illusion of what seemingly to be the function of class is split in two things: Constructor and Prototype. <br>
+      ---Constructors creat new instances<br>
+      ---Prototypes are used to define the behaviour of instances. <br>
+      JavaScript objects don’t have a formal class, and thus there’s no special syntax for defining how to create an instance or define its behaviour:
+
+    </p>
+
+    <section>
+      <pre>
+
+        function Artists (firstName, lastName, artistType) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.artistType = artistType;
+        };
+
+        Artists.prototype.introduce = function () {
+          return this.firstName + " " + this.lastName +
+          " is a famous " + this.artistType;
+        };
+
+        var art1 = new Artists("Beyonce", "Knowles", "singer");
+        console.log(art1.introduce());
+      </pre>
+    </section>
+    <p>
+      As you would notice from the example above that the constructor is a function, any function can be a potential constructor in Javascript. That is what is different from Class, as Class has special syntax and it is a special kind of object.
+      Nevertheless, unlike Ruby Classes, there are no special methods or properties associated with a prototype. Any object can be a prototype, even an empty object!
+      I hope this helps you understand a little more about the difference and function of Ruby Classes and Javascript Constructor Functions See you next week.
+    </p>
+    <img src="https://media.giphy.com/media/PGoyEtwIeIHZe/giphy.gif">
+
+<div class="pager">
+  <a href="ruby-classes"> Previous Page </a>
+<a href="#"> Next Page </a>
+</div>
+
+<div class="icons">
+<a href="https://www.facebook.com/kerry.imai"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Facebook.png"/></a>
+<a href="https://github.com/kerryimai"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Github.png"/></a>
+<a href="mailto:kmc736@nyu.edu"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-GooglePlus.png"/></a>
+</div>
+
+
+  </body>
+</html>
+
