@@ -47,11 +47,11 @@ nav ul li ul {
 }
 
 nav li ul {
-  display: none;
+  /*display: none;*/
 }
 
 nav li:hover ul {
-  display: block;
+  /*display: block;*/
 }
 
 
