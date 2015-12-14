@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/cheatsheet.css"/>
+    <title>cheatsheet</title>
+  </head>
+  <body>
+    <img src="http://data.whicdn.com/images/208634375/large.jpg" id="bg" alt="">
+    <nav><a href="index.html">Main Page</a></nav>
+
+    <h1>Cheat Sheet for Coding</h1>
+
+    <section>
+      <h2>Looping in Ruby:</h2>
+      <h3>While Loop</h3>
+      <p>
+        A while loop will continue to execute until the condition stated is false:</p>
+        <pre><code>
+        arr = ["John", "George", "Paul", "Ringo"]
+        i = 0
+
+        while arr[i]
+            puts arr[i]
+            i += 1
+        end</code></pre>
+        <p>Here we’re looping over an array; when arr[i] returns false (meaning there are no items left in the array), the loop will stop executing. Inside the loop, we print out the current item in the array, and them add one to our increment variable.</p>
+
+        <p>You can also use while as a modifier</p>
+        <pre><code>
+        arr = ["John", "George", "Paul", "Ringo"]
+        i = -1
+
+        puts arr[i += 1] while arr[i]
+        Loop #2: Until Loop
+        </code></pre>
+
+        <p>Just like unless is the opposite of if, until is the opposite of while. It will continue to loop until the condition is true:</p>
+        <pre><code>
+        days_left = 7;
+
+        until days_left == 0
+            puts "there are still #{days_left} in the week"
+            days_left -= 1
+        end
+        </code></pre>
+
+        <p>And of course, it’s a modifier, too.</p>
+        <pre><code>
+        days_left = 8
+
+        puts "there are still #{days_left -= 1} in the week" until days_left == 1
+        </code></pre>
+      </section>
+        <section>
+      <h3>For Loop</h3>
+      <p>
+          Yes, Ruby has a for loop. No, it’s not like the for loop in other languages. It acts like a foreach loop, for looping over the values in an array or hash:</p>
+          <pre><code>
+          arr = ["John", "George", "Paul", "Ringo"]
+
+          for item in arr
+              puts item
+          end</code></pre>
+
+          <p>If you’re looping over a hash, you can use two variable names, one for the key and one for the value:</p>
+          <pre><code>
+          joe = { :name => "Joe", :age => 30, :job => "plumber" }
+
+          for key, val in joe
+              puts "#{key} is #{val}"
+          end</code></pre>
+    </section>
+
+  </body>
+</html>

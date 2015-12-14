@@ -164,5 +164,5 @@ img {
   opacity: 0.4;
   /* Preserve aspet ratio */
   min-width: 100%;
-  min-height: 140%;
+  min-height: 100%;
 }
