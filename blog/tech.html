@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+      <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+      <title>Kerry's Blog</title>
+    </head>
+
+    <body>
+      <img src="http://data.whicdn.com/images/145906384/large.jpg" id="bg" alt="">
+      <header>
+        <h1>Kerry's Blog</h1>
+        <h3>Classy Ruby Class</h3>
+      </header>
+
+    <div id="sidebar">
+      <ul>
+        <li><a href="index.html">Blog list</a></li>
+        <li><a href="git.html">blog 1</a></li>
+        <li><a href="css-concepts.html">blog 2</a></li>
+        <li><a href="arrays-hashes.html">blog 3</a></li>
+        <li><a href="enumerable-methods.html">blog 4</a></li>
+        <li><a href="ruby-classes.html">blog 5</a></li>
+        <li><a href="JavaScript.html">blog 6</a></li>
+
+      </ul>
+      <ul id="home">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Album</a></li>
+      </ul>
+    </div>
+
+    <p>
+      During this 8 weeks of learning how to code, I have heard the word "Recursion" again and again. However, maybe its becasue of the complexity of this topic, I havn't yet offcially encountered it in programming. Thus this week, out of curiosity, I've decided to do some research and understand the idea of recursion in the programming language.
+      </p>
+
+    <img src="../imgs/0DaD5.png">
+    <p>
+      Recursive programming is the process of progressively reducing a problem in to easier to solve versions of itself. It is a lot like a mathmetical function. Except it calls a function from within that same function.</p>
+    <pre>
+      <section>
+        Every recursive function tends to:
+        - take a list to process, or some other
+        structure, or problem domain
+        - deal with the current point/step
+        - call itself on the remainder(s)/subdomain(s)
+        - combine or use the results of the subdomain work
+      </section>
+    </pre>
+    <p>
+      Let's take the real world 'operation' of cutting up a pizza. You've taken the pizza out of the oven and in order to serve it up you have to cut it in half, then cut those halves in half, then again cut those resultant halves in half. The operation of cutting the pizza you performing again and again until you've got the result you want (the number of slices). Let's say that an uncut pizza is a slice itself.
+    </P>
+
+    <img src="../imgs/pizza.png">
+
+    <pre>
+      <section>
+        def cut_pizza(existing_slices, desired_slices)
+          if existing_slices != desired_slices
+            # we don't have enough slices yet to feed everyone, so
+            # we're cutting the pizza slices,
+              thus doubling their number
+            new_slices = existing_slices * 2
+            # and this here is the recursive call
+            cut_pizza(new_slices, desired_slices)
+          else
+            # we have the desired number of slices, so we return
+            # here instead of continuing to recurse
+            return existing_slices
+          end
+        end
+
+        pizza = 1 # a whole pizza, 'one slice'
+        cut_pizza(pizza, 8) # => we'll get 8
+      </section>
+    </pre>
+    <p>
+      So the real world operation is cutting a pizza, and the recursion is doing the same thing over and over until you have what you want. Other tasks you'll find that can use recursive functions include:<br>
+      - Calculating compound interest over a number of months.<br>
+      - Looking for a file on a file system<br>
+      It's simply programming mechanics, a way of cleverly removing duplication.
+    </p>
+    <img class="original" src="https://lh3.googleusercontent.com/-gbS82MbV6Ek/U3TjwX5pWVI/AAAAAAAA-IU/GuRHTuTnPQs/w400-h523/gif-celebrities-recursion-macaulay-culkin-1246381.gif">
+    <div class="pager">
+      <a href="enumerable-methods.html"> Previous Page </a>
+      <a href="javaScript.html"> Next Page </a>
+    </div>
+
+    <div class="icons">
+      <a href="https://www.facebook.com/kerry.imai"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Facebook.png"/></a>
+      <a href="https://github.com/kerryimai"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-Github.png"/></a>
+      <a href="mailto:kmc736@nyu.edu"><img src="https://cdn2.iconfinder.com/data/icons/social-aquiocons/128/Aquicon-GooglePlus.png"/></a>
+    </div>
+  </body>
+</html>
+
