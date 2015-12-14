@@ -1,0 +1,29 @@
+p {
+  width: 60%;
+  background-color: rgba(127, 120, 120, 0.57);
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+}
+
+pre code {
+  background-color: rgba(208, 14, 73, 0.24);
+  font-size: 18px;
+  width: 70%;
+  display: block;
+}
+
+#bg {
+  position: fixed;
+  z-index: -1;
+  top: -25px;
+  left: 0;
+  opacity: 0.4;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 140%;
+}
