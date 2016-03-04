@@ -4,15 +4,26 @@
   padding: 0;
 }
 
-
+/*.top {
+  background-color: rgba(255, 255, 255, 0.38);
+}*/
 h1 {
   margin-top: 20px;
   font-size: 60px;
   font-family: monospace;
   text-align: center;
+  color: white;
 }
 
+h2{
+  color: black;
+  text-align: center;
+  font-size: 6em;
+  font-family: monospace;
+}
 .job-position {
+  background-color: rgba(222, 218, 218, 0.68);
+  color: black;
   margin-top: 20px;
   font-size: 40px;
   font-family: monospace;
@@ -20,41 +31,43 @@ h1 {
 }
 
 .coffee {
-  height: 40%;
-  width: 60%;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: absolute;
   margin-top: 15px;
   margin-bottom: 20px;
-    left: 20%;
+  left: 0%;
+  /*opacity: 0.8;*/
+  top: 0;
+  z-index: -1000;
 }
 
 nav {
   background-color: rgba(158, 158, 158, 0.32);
-  width: 200px;
+  width: 100%;
   top: 0;
-  bottom: 0;
-  position: fixed;
+  margin: 0 auto;
   padding-left: 10px;
 }
 
-nav > ul {
-  margin-top: 100px;
+nav li {
+  display: inline-block;
+  margin-right: 3em;
+  margin-left: 6em;
+  margin-top: 2em;
 }
 
 nav ul li a {
+
   font-weight: bold;
-  text-decoration: none;
-  display: block;
-  font-size: 20px;
+  font-size: 28px;
   font-family: monospace;
+  color: white;
 }
 
-nav ul li a:visited {
-  color: black;
-}
 
 nav ul li a:hover {
-  color: white;
+  color: gray;
 }
 
 nav ul li ul {
