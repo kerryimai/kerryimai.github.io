@@ -36,6 +36,10 @@ nav > ul {
   margin-top: 100px;
 }
 
+nav li{
+  margin-left: 10px;
+}
+
 nav ul li a {
   color: gray;
   font-weight: bold;
