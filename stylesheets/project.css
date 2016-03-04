@@ -16,7 +16,7 @@
 }
 
 h1 {
-  color: white;
+  color: gray;
   margin-top: 20px;
   font-size: 60px;
   font-family: fantasy;
@@ -24,7 +24,7 @@ h1 {
 }
 
 nav {
-  background-color: rgba(208, 14, 73, 0.24);
+  background-color: rgba(208, 14, 73, 0.77);
   width: 200px;
   top: 0;
   bottom: 0;
@@ -37,11 +37,11 @@ nav > ul {
 }
 
 nav ul li a {
-  color: white;
+  color: gray;
   font-weight: bold;
   text-decoration: none;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 nav ul li a:visited {
@@ -65,17 +65,6 @@ nav li:hover ul {
   display: block;
 }
 
-
-img {
-  left: 30%;
-  display: inline-block;
-  height: 300px;
-  width: 500px;
-  position: relative;
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-
 p {
   position: relative;
   left: 20%;
@@ -83,7 +72,7 @@ p {
   font-size: 20px;
   font-family: fantasy;
   margin-top: 20px;
-  color: white;
+  color: gray;
 }
 
 .icons{
@@ -104,18 +93,24 @@ p {
  height: auto;
 }
 
-#project-icons {
-  margin-left: 18%;
-}
-
-#project-icons li {
-display: inline-block;
-  margin-right: 60px;
-}
 
 #project-icons li img {
-  width: 80%;
-  height: 80%;
-  margin-right: 60px;
+  left: 2em;
+}
+
+figcaption {
+  display: inline;
+  position: relative;
+  left: 2em;
+  color: gray;
+}
+
+figure {
+  left: 30%;
   display: inline-block;
+  height: 300px;
+  width: 500px;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
