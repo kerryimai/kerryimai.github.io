@@ -12,6 +12,22 @@ h1 {
   text-align: center;
 }
 
+.job-position {
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: monospace;
+  text-align: center;
+}
+
+.coffee {
+  height: 40%;
+  width: 60%;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 20px;
+    left: 20%;
+}
+
 nav {
   background-color: rgba(158, 158, 158, 0.32);
   width: 200px;
@@ -29,7 +45,7 @@ nav ul li a {
   font-weight: bold;
   text-decoration: none;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   font-family: monospace;
 }
 
@@ -101,4 +117,18 @@ p {
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
+}
+
+.flexbox{
+position: relative;
+   width: 100%;
+   }
+
+.ontop {
+ position: absolute;
+   top: 200px;
+   left: 30%;
+   width: 100%;
+   color: white;
+   font-size: 25px;
 }
