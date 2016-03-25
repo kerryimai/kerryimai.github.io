@@ -151,3 +151,13 @@ position: relative;
 .skill-box {
   margin-bottom:5%;
 }
+
+.skill-box h1{
+  text-align: center;
+}
+
+.skill-box h4{
+  text-align: center;
+  padding: 2px;
+}
+
