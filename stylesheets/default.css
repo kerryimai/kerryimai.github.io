@@ -4,10 +4,14 @@
   padding: 0;
 }
 
-/*.top {
-  background-color: rgba(255, 255, 255, 0.38);
-}*/
-h1 {
+.top {
+position: absolute;
+top: 0%;
+width: 100%;
+
+}
+
+.top h1 {
   margin-top: 20px;
   font-size: 60px;
   font-family: monospace;
@@ -21,6 +25,7 @@ h2{
   font-size: 6em;
   font-family: monospace;
 }
+
 .job-position {
   background-color: rgba(222, 218, 218, 0.68);
   color: black;
@@ -31,13 +36,12 @@ h2{
 }
 
 .coffee {
-  height: 100%;
+  height: 60%;
   width: 100%;
-  position: absolute;
   margin-top: 15px;
   margin-bottom: 20px;
   left: 0%;
-  /*opacity: 0.8;*/
+  opacity: 0.8;
   top: 0;
   z-index: -1000;
 }
@@ -58,7 +62,6 @@ nav li {
 }
 
 nav ul li a {
-
   font-weight: bold;
   font-size: 28px;
   font-family: monospace;
@@ -126,7 +129,6 @@ p {
   z-index: -5;
   top: -15px;
   left: 0;
-
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
@@ -145,3 +147,17 @@ position: relative;
    color: white;
    font-size: 25px;
 }
+
+.skill-box {
+  margin-bottom:5%;
+}
+
+.skill-box h1{
+  text-align: center;
+}
+
+.skill-box h4{
+  text-align: center;
+  padding: 2px;
+}
+
